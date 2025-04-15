@@ -11,7 +11,7 @@ spec:
       secret: keycloak-admin-secret
   resources:
     limits:
-      cpu: '4'
+      cpu: '3'
       memory: 8Gi
     requests:
       cpu: 1000m
@@ -47,4 +47,4 @@ spec:
       key: username
       name: keycloak-db-secret
     vendor: postgres
-  instances: 3
+  instances: 2
