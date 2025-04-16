@@ -19,6 +19,7 @@ spec:
   http:
     httpEnabled: true
     httpPort: 8080
+    httpsPort: 8443
   proxy:
     headers: xforwarded
   hostname:
@@ -29,13 +30,6 @@ spec:
   additionalOptions:
     - name: log-console-output
       value: json
-    - name: metrics-enabled
-      value: 'true'
-    - name: health-enabled
-      value: 'true'
-  features:
-    enabled:
-      - preview
   db:
     database: keycloakdb
     host: keycloak-postgresql.keycloak.svc.cluster.local
@@ -47,4 +41,6 @@ spec:
       key: username
       name: keycloak-db-secret
     vendor: postgres
-  instances: 3
+  instances: 1
+  image: quay.io/rhn_gps_mileri/rhbk:26_0
+  startOptimized: true
