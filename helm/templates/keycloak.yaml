@@ -29,7 +29,9 @@ spec:
     enabled: true
   additionalOptions:
     - name: log-console-output
-      value: json
+      value: default
+    - name: log-level
+      value: "info,org.keycloak.events:trace"
   db:
     database: keycloakdb
     host: keycloak-postgresql.keycloak.svc.cluster.local
