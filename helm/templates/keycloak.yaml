@@ -19,7 +19,8 @@ spec:
   {{- if and .Values.global .Values.global.keycloak }}
   {{- $keycloakGlobal = .Values.global.keycloak }}
   {{- end }}
-  {{- $keycloak := (merge .Values.keycloak $keycloakGlobal) | required ".Values.keycloak is required." -}}
+  {{- $keycloakEnv := .Values.keycloak | required ".Values.keycloak is required."}}
+  {{- $keycloak := (merge $keycloakEnv $keycloakGlobal) | required ".Values.keycloak is required." -}}
   {{- with $keycloak }}
     {{- toYaml . | nindent 2 }}
    {{- end }}
