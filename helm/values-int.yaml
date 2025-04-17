@@ -1,0 +1,16 @@
+keycloak:
+  db:
+    database: keycloakdb
+    host: keycloak-postgresql.keycloak.svc.cluster.local
+    port: 5432
+  hostname:
+    hostname: keycloak.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com
+  image: quay.io/rhn_gps_mileri/rhbk:26_0
+  instances: 1
+  resources:
+    limits:
+      cpu: '4'
+      memory: 8Gi
+    requests:
+      cpu: 1000m
+      memory: 1700Mi
