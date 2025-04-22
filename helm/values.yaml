@@ -5,6 +5,8 @@ global:
         value: default
       - name: log-level
         value: info,org.keycloak.events:trace
+      - name: http-relative-path
+        value: /auth
     bootstrapAdmin:
       user:
         secret: keycloak-admin-secret
