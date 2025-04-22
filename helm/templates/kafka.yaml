@@ -5,6 +5,11 @@ metadata:
   namespace: kafka
 spec:
   kafka:
+    template:
+      persistentVolumeClaim:
+        metadata:
+          annotations:
+            argocd.argoproj.io/sync-options: Prune=false, Delete=false
     version: 3.9.0
     replicas: 3
     listeners:
@@ -28,6 +33,11 @@ spec:
         size: 100Gi
         deleteClaim: false
   zookeeper:
+    template:
+      persistentVolumeClaim:
+        metadata:
+          annotations:
+            argocd.argoproj.io/sync-options: Prune=false, Delete=false
     replicas: 3
     storage:
       type: persistent-claim
