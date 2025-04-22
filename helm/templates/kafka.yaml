@@ -9,8 +9,7 @@ spec:
       persistentVolumeClaim:
         metadata:
           annotations:
-            argocd.argoproj.io/sync-options: Prune=false, Delete=false
-            argocd.argoproj.io/compare-options: IgnoreExtraneous
+            test: test
     version: 3.9.0
     replicas: 3
     listeners:
@@ -38,8 +37,7 @@ spec:
       persistentVolumeClaim:
         metadata:
           annotations:
-            argocd.argoproj.io/sync-options: Prune=false, Delete=false
-            argocd.argoproj.io/compare-options: IgnoreExtraneous
+            test: test
     replicas: 3
     storage:
       type: persistent-claim
