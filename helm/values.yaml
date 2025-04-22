@@ -28,4 +28,4 @@ global:
       enabled: true
     proxy:
       headers: xforwarded
-    startOptimized: true
+    startOptimized: false
