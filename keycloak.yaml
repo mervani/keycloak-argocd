@@ -23,6 +23,7 @@ spec:
     headers: xforwarded
   hostname:
     hostname: keycloak.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com
+    admin: keycloak-admin.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com
   ingress:
     className: openshift-default
     enabled: true
