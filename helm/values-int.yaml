@@ -5,7 +5,7 @@ keycloak:
     port: 5432
   hostname:
     hostname: https://keycloak.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com/auth/
-    admin: https://keycloak-admin.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com/auth/
+    admin: https://keycloak-admin.apps.cluster-9qn7g.9qn7g.sandbox2382.opentlc.com/
     strict: true
     backchannelDynamic: false
   image: quay.io/rhn_gps_mileri/rhbk:26_0
