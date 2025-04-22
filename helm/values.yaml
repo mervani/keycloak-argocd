@@ -23,7 +23,7 @@ global:
       httpsPort: 8443
     ingress:
       className: openshift-default
-      enabled: true
+      enabled: false
     proxy:
       headers: xforwarded
     startOptimized: false
